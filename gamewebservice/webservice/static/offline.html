@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Loi khong ket noi duoc voi server !!!</title>
+	<script>
+	detect_offline = function() {
+		alert('No internet connection found!!!.');
+	};
+	redirect_to_IP = function() {
+		window.location = 'http://127.0.0.1';
+	};
+	</script>
+</head>
+<body>
+	<div id="error_board">
+		<img src="http://127.0.0.1/offline.jpg" onerror="detect_offline();" onclick="redirect_to_IP();"></img>
+	</div>
+</body>
+</html>

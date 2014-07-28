@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Galaxy Poker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="appframework/build/css/af.ui.base.css">
+        <link rel="stylesheet" href="appframework/build/css/af.ui.css">
+        <link rel="stylesheet" href="appframework/build/css/icons.css">
+        
+        <style>
+            #CocoonJS_App_ForCocoonJS_WebViewDiv {
+                z-index: 999;
+                opacity: 0.98;
+            }
+        </style>
+        <script src="appframework/appframework.js"></script>
+        <script src="appframework/ui/appframework.ui.js"></script>
+        <script src="appframework/build/af.plugins.min.js"></script>
+                
+        <script src="js/require.js" data-main="js/main_wv.js"></script>
+        <script>
+            waitForLoading = function() {
+               try {
+                   checkSavedSession();
+               }
+               catch (err) {
+                   setTimeout(
+                            function() {
+                                waitForLoading();
+                            },
+                            200
+                    );
+               }
+            };
+        </script>
+    </head>
+    <body style="margin:0px">
+    </body>
+</html>

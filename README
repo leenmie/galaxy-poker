@@ -1,0 +1,14 @@
+Online face to face limited pot Texas Holdem Poker
+
+gameclient: 
+	A HTML5/Javascript game client. 
+	Impactjs game engine, requirejs, CocoonJS. 
+	Mobile deployable by CocoonJS.
+
+gameserver: 
+	An asynchronous scalable game server. 
+	Tech stacks: XMPP ejabberd, ZeroMQ, MongoDB, and python-twisted.
+
+gamewebservice: 
+	shared service for game, such as: user registration, login, facebook, ...
+	CherryPy web service.
